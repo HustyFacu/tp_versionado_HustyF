@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Página Principal TP4</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, button { padding: 10px; margin: 5px 0; border-radius: 4px; border: 1px solid #ccc; }
+        button { background-color: #28a745; color: white; border: none; cursor: pointer; }
+    </style>
 </head>
 <body>
-    <h1>Bienvenido a mi proyecto del TP4</h1>
-    <p>Esta es la versión inicial (v0.1).</p>
+    <div class="container">
+        <h1>Bienvenido a mi proyecto del TP4</h1>
+        <p>Esta es la versión con formulario (v0.2).</p>
+        
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="tu@email.com"><br>
+            <button type="button">Enviar Mensaje</button>
+        </form>
+    </div>
 </body>
 </html>
